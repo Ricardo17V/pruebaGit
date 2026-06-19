@@ -12,7 +12,11 @@ public abstract class CuentaBancaria {
         this.titular = titular;
         this.saldo = saldoInicial;
     }
-
+    
+    
+    public void calcularInteres() {
+    	
+    }
     public String getTitular() {
         return titular;
     }
