@@ -49,9 +49,10 @@ public class CuentaCorrienteTest {
 	public void limpiarTipoCuenta() {
 		cuenta = null;
 	}
-
+	
 	@Test
 	public void testCalcularInteres() {
+		//test para testear los errores que se producen en el método ingresar y en el método reintegrar
 		assertEquals(interesEsperado, cuenta.calcularInteres(), 0.01);
 	}
 
