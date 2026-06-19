@@ -5,4 +5,5 @@
  * 
  */
 module pruebagit {
+	requires junit;
 }
