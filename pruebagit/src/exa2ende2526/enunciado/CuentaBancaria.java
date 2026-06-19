@@ -25,12 +25,19 @@ public abstract class CuentaBancaria {
     }
 
     public void ingresar(double cantidad) {
-
+    	if(cantidad<0) {
+    		throw new IllegalArgumentException("No se pueden ingresar cantidades negativas");
+    	}
         saldo += cantidad;
     }
 
     public void reintegrar(double cantidad) {
-
+    	if(cantidad<0) {
+    		throw new IllegalArgumentException("No se sacar cantidades negativas");
+    	}
+    	if(saldo<cantidad) {
+    		throw new IllegalArgumentException("No se puede sacar más dinero que tu saldo actual");
+    	}
         saldo -= cantidad;
     }
 
