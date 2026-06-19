@@ -14,9 +14,8 @@ public abstract class CuentaBancaria {
     }
     
     
-    public void calcularInteres() {
-    	
-    }
+    public abstract double calcularInteres();
+    
     public String getTitular() {
         return titular;
     }
